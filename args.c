@@ -1,8 +1,12 @@
+/** \file args.c
+ * args - dump command line arguments
+ */
 #include <stdio.h>
+#include <string.h>
 
 void print_arg(int n, const char *arg)
 {
-	printf("argument[%i]=\"%s\"\n", n, arg);
+	printf("argument[%i]=\"%s\" (%zu)\n", n, arg, strlen(arg));
 }
 
 void dump_args(int argc, char *argv[])
