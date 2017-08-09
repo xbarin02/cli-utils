@@ -1,10 +1,10 @@
 CFLAGS=-std=c99 -pedantic -Wall -Wextra -march=native -O2
 LDLIBS=
-BIN=args
+BINS=args exe
 
 .PHONY: all
-all: $(BIN)
+all: $(BINS)
 
 .PHONY: clean
 clean:
-	$(RM) -- $(BIN)
+	$(RM) -- $(BINS)
