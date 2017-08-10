@@ -1,6 +1,6 @@
 CFLAGS=-std=c99 -pedantic -Wall -Wextra -march=native -O2
 LDLIBS=
-BINS=args exe
+BINS=args exe sum
 
 .PHONY: all
 all: $(BINS)
