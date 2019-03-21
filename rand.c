@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 
 	srand((unsigned int)seed);
 
-	for(int n = 0; n < numb; n++)
-	{
+	for (int n = 0; n < numb; n++) {
 		printf("%i\n", rand());
 	}
 

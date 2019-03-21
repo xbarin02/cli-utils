@@ -11,8 +11,7 @@ void print_arg(int n, const char *arg)
 
 void dump_args(int argc, char *argv[])
 {
-	for(int n = 0; n < argc; n++)
-	{
+	for (int n = 0; n < argc; n++) {
 		print_arg(n, argv[n]);
 	}
 }

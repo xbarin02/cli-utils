@@ -7,8 +7,7 @@
 
 void dump_args(char *argv[])
 {
-	for(int n = 0; *argv; n++, argv++)
-	{
+	for (int n = 0; *argv; n++, argv++) {
 		printf("argv[%i]=\"%s\"\n", n, *argv);
 	}
 }
