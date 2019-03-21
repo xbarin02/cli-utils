@@ -1,31 +1,17 @@
 /** \file sum.c
  * sum - sum integers, when piping from stdin
  */
-#include <stdio.h>
+#include <iostream>
 
 int main()
 {
 	int sum = 0;
 
-	do {
-		scanf(" ");
+	for (int n; std::cin >> n; ) {
+		sum += n;
+	}
 
-		int i;
-
-		int r = scanf("%i", &i);
-
-		if( EOF == r ) {
-			break;
-		}
-
-		if( r == 1 ) {
-			sum += i;
-		} else {
-			break;
-		}
-	} while (true);
-
-	printf("%i\n", sum);
+	std::cout << sum << std::endl;
 
 	return sum;
 }
