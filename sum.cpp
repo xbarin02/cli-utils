@@ -1,4 +1,4 @@
-/** \file sum.c
+/** \file sum.cpp
  * sum - sum integers, when piping from stdin
  */
 #include <iostream>
