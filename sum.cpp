@@ -7,28 +7,23 @@ int main()
 {
 	int sum = 0;
 
-	do
-	{
+	do {
 		scanf(" ");
 
 		int i;
 
 		int r = scanf("%i", &i);
 
-		if( EOF == r )
-		{
+		if( EOF == r ) {
 			break;
 		}
-		if( r == 1 )
-		{
+
+		if( r == 1 ) {
 			sum += i;
-		}
-		else
-		{
+		} else {
 			break;
 		}
-	}
-	while(1);
+	} while (true);
 
 	printf("%i\n", sum);
 
