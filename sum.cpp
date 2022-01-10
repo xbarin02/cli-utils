@@ -13,5 +13,5 @@ int main()
 
 	std::cout << sum << std::endl;
 
-	return sum;
+	return 0;
 }
